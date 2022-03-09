@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Page</title>
+
+    <link rel="icon" href="/Favicon1.ico/zomato-logo-1.png">
+    
+</head>
+<style>
+    *{
+        margin: auto;
+    }
+    .navbar{
+        width:100%;
+        height: 57px;
+        background-color: rgb(87, 72, 72);
+    }
+    .navbar ul{
+        margin-right: 76px;
+    }
+    .navbar li{
+        float:right;
+        margin:  16px 10px;
+        list-style: none;
+    }
+    .navbar a{
+        color : white;
+        text-decoration: none;
+    }
+    #logingit{
+        background-color: rgb(81, 83, 235);
+        border-radius:  10px;
+        padding: 5px 15px;
+    }
+
+    #signup{
+        background-color: rgb(46, 8, 153);
+        border-radius: 10px;
+        padding: 5px  15px;
+    }
+    #login{
+        background-color: rgb(54, 219, 68);
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+    h2{
+        color : white;
+        position: absolute;
+        top: 9px;
+        left: 40px;
+        font-style:  italic;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    .search{
+    color: white;
+    float: right;
+    margin: 17px 35px;
+    padding: 3px 12px;
+    border-radius: 17px;
+    
+}
+
+.headingText{
+    text-align:center;
+    font-size:30px;
+    font-weight: bold;
+}
+
+#content{
+    display: inline-block;
+    width:80%;
+    margin-left:10%;
+    margin-top: 3%;
+    
+}
+
+#filterDiv{
+    height:400px;
+    width:20%;
+    border:2px solid rgb(167, 164, 164);
+    border-radius: 10px;
+    float: left;
+    margin-top: 6%;
+}
+.Sort{
+   /* float: left;*/
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color : rgb(138, 123, 123);
+    
+    
+    
+}
+.SortBy{
+    /*float: left;*/
+    margin-left: 20px;
+    
+    
+}
+.Cuisine{
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-bottom: 18px;
+    color : rgb(138, 123, 123);
+}
+.Cuisines{
+    margin-left: 20px;
+}
+
+#heading{
+       text-align: center;
+       margin-bottom: 15px;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+ .container {
+     display: flex;
+     justify-content: center;
+ }
+
+
+
+.card{
+box-shadow: 0 0 15px rgb(192, 147, 147);
+width: 243px;
+
+padding: 12px;
+margin:15px;
+border-radius: 10px;
+cursor: pointer;
+
+}
+
+.img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 8px;
+    padding: 4px 8px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size:12px;
+    margin-top: 8px;
+}
+.bgimg{
+    width: 100%;
+    height: 20%;
+}
+
+
+#contentDiv{
+    height:950px;
+    width:77%;
+    margin-left: 2%;
+    /*border:2px solid hotpink;*/
+    float: left;
+}
+.filter{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+.hotelname{
+    font-family: Verdana, Geneva, Tahoma, sans-ser;
+    font-size: 15px;
+    color: rgb(86 47 87);
+}
+.rating{
+    position: relative;
+    top: -32px;
+    left: 194px;
+    padding: 2px 4px 2px 4px;
+    background: rgb(56, 240, 80);
+    border: 1px solid rgb(18 175 51);
+    border-radius: 10px;
+    margin-top: 0px;
+}
+.cost{
+    position: relative;
+    top: 62px;
+    left: 148px;
+    padding: 2px 4px 2px 4px;
+    background: rgb(228 226 240);
+    border: 1px solid rgb(131 208 184);
+    border-radius: 10px;
+    margin-top: 0px;
+}
+.Num{
+    background: rgb(224 165 165);
+    border-radius: 53px;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+.more
+{
+    margin-left: 377px;
+    margin-top: 80px;
+    
+}
+.Num1{
+    background: rgb(216, 192, 192);
+    border-radius: 53px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+footer{
+    background: rgb(63 57 57);
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 250px;
+    
+}
+.footers{
+    display: flex;
+    
+}
+.footer1{
+    margin-top: 2%;
+    cursor: pointer;
+}
+.footer2{
+    margin-top: 2%;
+    cursor: pointer;
+}
+.footer3{
+    margin-top: 2%;
+    cursor: pointer;
+}
+.foot{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: rgb(143 156 77);
+}
+footer.li{
+    list-style: none;
+}
+.copyright{
+    text-align: center;
+    margin-top: 35px;
+    color: rgb(155, 137, 137);
+}
+.Discount{
+    position: relative;
+    top: 23px;
+    left: 2px;
+    background: rgb(37, 111, 239);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+/* .time{
+    top: 20px;
+    left: 20px;
+    background: #000;
+    position: relative;
+} */
+
+</style>
+<body>
+    <header>
+        
+        <nav class="navbar">
+            <h2> Zomato </h2>
+            <ul>
+                
+                <li id ="logingit"> <a href="https://www.google.com" target="_blank">Login with Github</a> </li>
+                <li id ="signup"> <a href="https://www.facebook.com" target="_blank">Sign Up</a></li>
+                <li id ="login"> <a href="https://www.wikipedia.com" target="_blank">Login</a> </li>
+                
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search your favroite food " >
+                 </div>
+            </ul>
+            
+
+        </nav>
+
+    </header>
+    
+        <div id="content">
+            <div id="filterDiv">
+                <h3 class="filter">Filter</h3>
+                <div class="Sort">Sort by:</div>
+                <br>
+                
+                    <div class="SortBy">
+                   <div> <input type="radio"> Popularity   cost</div>
+                   <div><input type="radio"> Rating: High to Low</div>
+                   <div> <input type="radio"> Delivery time</div>
+                   <div><input type="radio"> Cost: Low to High </div>
+                   <div><input type="radio"> Cost: High to Low </div>
+                    </div>
+                    <br>
+
+                <div class="Cuisine">Cuisines:</div>
+                <div class="Cuisines">
+                    
+                   <div> <input type="checkbox"> Afgan</div>
+                   <div> <input type="checkbox"> BBQ</div>
+                   <div> <input type="checkbox"> Continental</div>
+                   <div> <input type="checkbox"> Desserts</div>
+                   <div> <input type="checkbox"> Fast Food</div>
+                   <div> <input type="checkbox"> Healthy Food</div>
+                   <div> <input type="checkbox"> Juices</div>
+                </div>
+
+               
+            </div>
+            <div id="contentDiv">
+
+                <div id="heading">
+                    <h1>Collections</h1>
+                    <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hingoli, based on trends</p>
+                    </div> 
+                     <div class="container">
+                        <div class="card">
+                            <span class="Discount">
+                                40% OFF
+                            </span>
+                           
+                            <img src="/Img/Laziz_res.jfif"  class="img" alt="pasta">
+                            <!-- <span class="time">
+                                33mins;
+                            </span> -->
+                            <span class="rating">
+                                4.4&star;
+                            </span>
+                            <span class="cost">
+                                &#X20B9;150
+                            </span>
+                                <h3 class="hotelname">Friends Adda</h3>
+
+                                <p>Pizza, Pasta, Sandwich </p>
+                                <a href="" class="btn"> Order Now</a>
+                        </div>
+                
+                       
+                       <div class="card">
+                        <span class="Discount">
+                            20% OFF
+                        </span>
+                                <img src="/Img/Parivar_res.jfif" class="img" alt="Noodles">
+                                <span class="rating">
+                                    3.4&star;
+                                </span>
+                                <span class="cost">
+                                    &#X20B9;250
+                                </span>
+                                    <h3 class="hotelname">Up & Above Restro</h3>
+                                    <p>  Continental, Italian And Indian</p>
+                                    <a href="" class="btn"> Order Now</a>
+                            </div>
+                
+                            <div class="card">
+                                <span class="Discount">
+                                    35% OFF
+                                </span>
+                                <img src="/Img/Veggis_res.jfif"  class="img" alt="dosa">
+                                <span class="rating">
+                                    4.5&star;
+                                </span>
+                                <span class="cost">
+                                    &#X20B9;200
+                                </span>
+                                    <h3  class="hotelname">Cafe Sky Deck</h3>
+                                    <p>Veg & Non Veg </p>
+                                    <a href="" class="btn"> Order Now</a>
+                            </div>
+
+                           
+                </div>
+                <div class="container">
+                    <div class="card">
+                        <span class="Discount">
+                            25% OFF
+                        </span>
+                        <img src="/Img/Mouj_res.jfif"  class="img" alt="pasta">
+                        <span class="rating">
+                            3.9&star;
+                        </span>
+                        <span class="cost">
+                            &#X20B9;350
+                        </span>
+                            <h3  class="hotelname">Hotel Ramgiri International</h3>
+                            <p>Continental & Italian </p>
+                            <a href="" class="btn"> Order Now</a>
+                    </div>
+            
+                   
+                   <div class="card">
+                    <span class="Discount">
+                        50% OFF
+                    </span>
+                            <img src="/Img/jain_res.jfif" class="img" alt="Noodles">
+                            <span class="rating">
+                                4.0&star;
+                            </span>
+                            <span class="cost">
+                                &#X20B9;150
+                            </span>
+                                <h3  class="hotelname">Hidden Cafe</h3>
+                                <p>South Indian & North Indian</p>
+                                <a href="" class="btn"> Order Now</a>
+                        </div>
+            
+                        <div class="card">
+                            <span class="Discount">
+                                15% OFF
+                            </span>
+                            <img src="/Img/Gupta_res.jfif"  class="img" alt="dosa">
+                            <span class="rating">
+                                3.0&star;
+                            </span>
+                            <span class="cost">
+                                &#X20B9;200
+                            </span>
+                                <h3  class="hotelname">Bawarchi Family Restaurant</h3>
+                                <p>North Indian Thalis </p>
+                                <a href="" class="btn"> Order Now</a>
+                        </div>
+
+                </div>
+
+                <div class="more">
+                     
+                     <span class="Num">2</span>
+                     <span class="Num">3</span>
+                     <span class="Num">4</span>
+                     <span class="Num1">></span>
+                     <span class="Num1">>></span>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="footers">
+                <div class="footer1">
+                    <h4 class="foot">Cities We Deliver To</h4>
+                    <ul>
+                        <li> Mumbai  Pune</li>
+                        <li> Delhi  Nagpur</li>
+                        <li> Kolkatta Shimla</li>
+                        <li>Lucknow  Banglore</li>
+                        <li>Amravati  Akola </li>
+                    </ul>
+                </div>
+                <div class="footer2">
+                    <h4 class="foot">Zomato for foodies</h4>
+                    <ul>
+                        <li> Blog</li>
+                        <li> Community</li>
+                        <li> Add Restaurant</li>
+                        <li>Mobile App</li>
+                        <li>Privacy </li>
+                    </ul>
+                </div>
+                <div class="footer3">
+                    <h4 class="foot">Zomato Enterprise</h4>
+                    <ul>
+                        <li> Report Fraud</li>
+                        <li> Carrer</li>
+                        <li> Investor Relation</li>
+                        <li>Sitemap</li>
+                        <li>Zomato For Work </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <p class="copyright">&copy;All Rights Reserved</p>
+        </footer>
+    
+</body>
+</html>

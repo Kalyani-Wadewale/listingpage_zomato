@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing Page</title>
+    <title>Document</title>
+    <link rel="icon" href="/Zomato Project/Favicon1.ico/zomato-logo-1.PNG">
 
-    <link rel="icon" href="Favicon1.ico/zomato-logo-1.PNG">
-    
-</head>
-<style>
-    *{
+    <style>
+*{
         margin: auto;
     }
+
+    /* Navigation bar CSS */
+    /* header{
+        position: fixed;
+    } */
     .navbar{
         width:100%;
         height: 57px;
@@ -65,166 +68,141 @@
     
 }
 
-.headingText{
-    text-align:center;
-    font-size:30px;
-    font-weight: bold;
-}
-
-#content{
-    display: inline-block;
-    width:80%;
-    margin-left:10%;
-    margin-top: 3%;
-    
-}
-
-#filterDiv{
+/*Search CSS*/
+#search{
     height:400px;
-    width:20%;
-    border:2px solid rgb(167, 164, 164);
-    border-radius: 10px;
-    float: left;
-    margin-top: 6%;
-}
-.Sort{
-   /* float: left;*/
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    color : rgb(138, 123, 123);
-    
-    
+    width:100%;
+    background-image: url('/Zomato Project/Img/zom_homepage_bg3.PNG');
+    /* filter: blur(4px);
+    -webkit-filter: blur(4px); */
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-size: 100% 400px;
+    /* border: 1px solid rgb(17, 230, 63); */
     
 }
-.SortBy{
-    /*float: left;*/
-    margin-left: 20px;
-    
-    
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color:rgb(240 229 229/ 60%);
+    border-radius: 50%;
+    margin-left: 43%;
+    margin-top:2%;
+    position:absolute;
 }
-.Cuisine{
-    margin-left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-bottom: 18px;
-    color : rgb(138, 123, 123);
-}
-.Cuisines{
-    margin-left: 20px;
+
+#logo>span{
+    margin-left: 28%;
+    margin-top:16%;
+    position:absolute;
+    font-size: 80px;
 }
 
 #heading{
-       text-align: center;
-       margin-bottom: 15px;
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
- .container {
-     display: flex;
-     justify-content: center;
- }
-
-
-
-.card{
-box-shadow: 0 0 15px rgb(192, 147, 147);
-width: 243px;
-
-padding: 12px;
-margin:15px;
-border-radius: 10px;
-cursor: pointer;
-
-}
-
-.img{
-    width: 100%;
-    height: 200px;
-    border-radius: 5px;
-    margin-top: 0px;
-}
-
-.btn{
-    background-color: black;
+    margin-left: 25%;
+    margin-top: 14%;
+    position: absolute;
+    font-size: 50px;
     color: white;
-    font-family: sans-serif;
-    border-radius: 8px;
-    padding: 4px 8px;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    font-size:12px;
-    margin-top: 8px;
-}
-.bgimg{
-    width: 100%;
-    height: 20%;
 }
 
+.dropdown{
+    height:60px;
+    width:60%;
+    margin-left: 23%;
+    margin-top: 20%;
+    position: absolute;
+}
 
-#contentDiv{
-    height:950px;
-    width:77%;
+select{
+    height:60px;
+    width:40%;
+    font-size:20px;
+    text-align:center;
+}
+
+.restSelect{
+    width:55%;
+}
+
+/*QuickSearch CSS*/
+#quickSearch{
+    width:80%;
+    margin-left:10%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+}
+
+#quickHeading{
+     font-size:30px;
+     color:#e28b62;
+     display:block;
+     font-weight:bold;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-left: 2%;
+}
+
+#quickSubHeading{
+    font-size:20px;
+    color:gray;
+    display:block;
+    line-height: 3;
     margin-left: 2%;
-    /*border:2px solid hotpink;*/
+}
+
+.tileContainer{
+    width:30%;
+    box-shadow: 10px 20px 40px gray;
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 2%;
+    transform: none;
+    opacity: 1;
+    will-change: transform, opacity;
+    
+    filter: unset;
+    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
+    
+}
+
+.tileComponent1{
+  width:50%;
+  height:180px;
+  float: left;
+}
+
+.tileComponent1 > img{
+    width:100%;
+    height:180px;
+}
+.tileComponent2{
+    width:45%;
+    margin-left: 5%;
+    margin-top: 14%;
     float: left;
 }
-.filter{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 19px;
-    margin-bottom: 16px;
+
+.componentHeading > a{
+    color:#e28b62;
+    font-size: 25px;
 }
-.hotelname{
-    font-family: Verdana, Geneva, Tahoma, sans-ser;
+
+.componentSubHeading{
+    color:gray;
     font-size: 15px;
-    color: rgb(86 47 87);
 }
-.rating{
-    position: relative;
-    top: -32px;
-    left: 194px;
-    padding: 2px 4px 2px 4px;
-    background: rgb(56, 240, 80);
-    border: 1px solid rgb(18 175 51);
-    border-radius: 10px;
-    margin-top: 0px;
-}
-.cost{
-    position: relative;
-    top: 62px;
-    left: 148px;
-    padding: 2px 4px 2px 4px;
-    background: rgb(228 226 240);
-    border: 1px solid rgb(131 208 184);
-    border-radius: 10px;
-    margin-top: 0px;
-}
-.Num{
-    background: rgb(224 165 165);
-    border-radius: 53px;
-    padding: 10px 15px;
-    cursor: pointer;
-    
-}
-.more
-{
-    margin-left: 377px;
-    margin-top: 80px;
-    
-}
-.Num1{
-    background: rgb(216, 192, 192);
-    border-radius: 53px;
-    padding: 3px 6px;
-    cursor: pointer;
-}
+/* footer css */
 footer{
     background: rgb(63 57 57);
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 250px;
+    height: 300px;
     
+}
+footer pre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .footers{
     display: flex;
@@ -255,35 +233,29 @@ footer.li{
     margin-top: 35px;
     color: rgb(155, 137, 137);
 }
-.Discount{
-    position: relative;
-    top: 23px;
-    left: 2px;
-    background: rgb(37, 111, 239);
-    padding: 3px 5px;
-    border-radius: 5px;
+footer li{
+    list-style: none;
 }
-/* .time{
-    top: 20px;
-    left: 20px;
-    background: #000;
-    position: relative;
-} */
 
-</style>
+
+
+
+    </style>
+</head>
 <body>
+    
     <header>
         
         <nav class="navbar">
             <h2> Zomato </h2>
             <ul>
                 
-                <li id ="logingit"> <a href="https://www.google.com" target="_blank">Login with Github</a> </li>
+                <li id ="logingit"> <a href="https://www.google.com" target="_blank">Add Resturant</a> </li>
                 <li id ="signup"> <a href="https://www.facebook.com" target="_blank">Sign Up</a></li>
                 <li id ="login"> <a href="https://www.wikipedia.com" target="_blank">Login</a> </li>
                 
                 <div class="search">
-                    <input type="text" name="search" id="search" placeholder="Search your favroite food " >
+                    <input type="text" name="search" placeholder="Search your favroite food " >
                  </div>
             </ul>
             
@@ -291,202 +263,155 @@ footer.li{
         </nav>
 
     </header>
-    
-        <div id="content">
-            <div id="filterDiv">
-                <h3 class="filter">Filter</h3>
-                <div class="Sort">Sort by:</div>
-                <br>
-                
-                    <div class="SortBy">
-                   <div> <input type="radio"> Popularity   cost</div>
-                   <div><input type="radio"> Rating: High to Low</div>
-                   <div> <input type="radio"> Delivery time</div>
-                   <div><input type="radio"> Cost: Low to High </div>
-                   <div><input type="radio"> Cost: High to Low </div>
-                    </div>
-                    <br>
 
-                <div class="Cuisine">Cuisines:</div>
-                <div class="Cuisines">
-                    
-                   <div> <input type="checkbox"> Afgan</div>
-                   <div> <input type="checkbox"> BBQ</div>
-                   <div> <input type="checkbox"> Continental</div>
-                   <div> <input type="checkbox"> Desserts</div>
-                   <div> <input type="checkbox"> Fast Food</div>
-                   <div> <input type="checkbox"> Healthy Food</div>
-                   <div> <input type="checkbox"> Juices</div>
+    <div id="search">
+        <div id="logo">
+            <span>Z!</span>
+        </div>
+        <div id="heading">
+            Find The Best Restaurants Near You
+        </div>
+        <div class="dropdown">
+            <select>
+                <option>----SELECT YOUR CITY-----</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+            </select>
+            <select class="restSelect">
+                <option>----SELECT YOUR Restaurants-----</option>
+                <option>Ama Cafe</option>
+                <option>Hotel Taj</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="quickSearch">
+        <span id="quickHeading">Quick Search</span>
+        <span id="quickSubHeading">Discover Restaurants By Meal</span>
+        <div id="main">
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/breakfast.PNG" alt=""/>
                 </div>
-
-               
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">BreakFast</a>
+                    </div>
+                    <div class="componentSubHeading">
+                        Best Place For BreakFast
+                    </div>
+                </div>
             </div>
-            <div id="contentDiv">
-
-                <div id="heading">
-                    <h1>Collections</h1>
-                    <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Hingoli, based on trends</p>
-                    </div> 
-                     <div class="container">
-                        <div class="card">
-                            <span class="Discount">
-                                40% OFF
-                            </span>
-                           
-                            <img src="Img/Laziz_res.PNG"  class="img" alt="pasta">
-                            <!-- <span class="time">
-                                33mins;
-                            </span> -->
-                            <span class="rating">
-                                4.4&star;
-                            </span>
-                            <span class="cost">
-                                &#X20B9;150
-                            </span>
-                                <h3 class="hotelname">Friends Adda</h3>
-
-                                <p>Pizza, Pasta, Sandwich </p>
-                                <a href="" class="btn"> Order Now</a>
-                        </div>
-                
-                       
-                       <div class="card">
-                        <span class="Discount">
-                            20% OFF
-                        </span>
-                                <img src="Img/Parivar_res.PNG" class="img" alt="Noodles">
-                                <span class="rating">
-                                    3.4&star;
-                                </span>
-                                <span class="cost">
-                                    &#X20B9;250
-                                </span>
-                                    <h3 class="hotelname">Up & Above Restro</h3>
-                                    <p>  Continental, Italian And Indian</p>
-                                    <a href="" class="btn"> Order Now</a>
-                            </div>
-                
-                            <div class="card">
-                                <span class="Discount">
-                                    35% OFF
-                                </span>
-                                <img src="Img/Veggis_res.PNG"  class="img" alt="dosa">
-                                <span class="rating">
-                                    4.5&star;
-                                </span>
-                                <span class="cost">
-                                    &#X20B9;200
-                                </span>
-                                    <h3  class="hotelname">Cafe Sky Deck</h3>
-                                    <p>Veg & Non Veg </p>
-                                    <a href="" class="btn"> Order Now</a>
-                            </div>
-
-                           
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/nightlife.PNG" alt=""/>
                 </div>
-                <div class="container">
-                    <div class="card">
-                        <span class="Discount">
-                            25% OFF
-                        </span>
-                        <img src="Img/Mouj_res.PNG"  class="img" alt="pasta">
-                        <span class="rating">
-                            3.9&star;
-                        </span>
-                        <span class="cost">
-                            &#X20B9;350
-                        </span>
-                            <h3  class="hotelname">Hotel Ramgiri International</h3>
-                            <p>Continental & Italian </p>
-                            <a href="" class="btn"> Order Now</a>
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">NightLife</a>
+                        
                     </div>
-            
-                   
-                   <div class="card">
-                    <span class="Discount">
-                        50% OFF
-                    </span>
-                            <img src="Img/jain_res.PNG" class="img" alt="Noodles">
-                            <span class="rating">
-                                4.0&star;
-                            </span>
-                            <span class="cost">
-                                &#X20B9;150
-                            </span>
-                                <h3  class="hotelname">Hidden Cafe</h3>
-                                <p>South Indian & North Indian</p>
-                                <a href="" class="btn"> Order Now</a>
-                        </div>
-            
-                        <div class="card">
-                            <span class="Discount">
-                                15% OFF
-                            </span>
-                            <img src="Img/Gupta_res.PNG"  class="img" alt="dosa">
-                            <span class="rating">
-                                3.0&star;
-                            </span>
-                            <span class="cost">
-                                &#X20B9;200
-                            </span>
-                                <h3  class="hotelname">Bawarchi Family Restaurant</h3>
-                                <p>North Indian Thalis </p>
-                                <a href="" class="btn"> Order Now</a>
-                        </div>
-
+                    <div class="componentSubHeading">
+                        Best Place For NightLife
+                    </div>
                 </div>
-
-                <div class="more">
-                     
-                     <span class="Num">2</span>
-                     <span class="Num">3</span>
-                     <span class="Num">4</span>
-                     <span class="Num1">></span>
-                     <span class="Num1">>></span>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/lunch.PNG" alt=""/>
                 </div>
-
-
-
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">Lunch</a>
+                        
+                    </div>
+                    <div class="componentSubHeading">
+                        Best Place For NightLife
+                    </div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/dinner.PNG" alt=""/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">Dinner</a>
+                        
+                    </div>
+                    <div class="componentSubHeading">
+                        Best Place For Dinner
+                    </div>
+                </div>
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/drink.PNG" alt=""/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">Drinks</a>
+                        
+                    </div>
+                    <div class="componentSubHeading">
+                        Best Place For Drinks
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img src="/Zomato Project/Img/brunch.PNG" alt=""/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        <a href="/Zomato Project/index.html" target="_blank">Brunch</a>
+                        
+                    </div>
+                    <div class="componentSubHeading">
+                        Best Place For Brunch
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-        <footer>
-            <div class="footers">
-                <div class="footer1">
-                    <h4 class="foot">Cities We Deliver To</h4>
-                    <ul>
-                        <li> Mumbai  Pune</li>
-                        <li> Delhi  Nagpur</li>
-                        <li> Kolkatta Shimla</li>
-                        <li>Lucknow  Banglore</li>
-                        <li>Amravati  Akola </li>
-                    </ul>
-                </div>
-                <div class="footer2">
-                    <h4 class="foot">Zomato for foodies</h4>
-                    <ul>
-                        <li> Blog</li>
-                        <li> Community</li>
-                        <li> Add Restaurant</li>
-                        <li>Mobile App</li>
-                        <li>Privacy </li>
-                    </ul>
-                </div>
-                <div class="footer3">
-                    <h4 class="foot">Zomato Enterprise</h4>
-                    <ul>
-                        <li> Report Fraud</li>
-                        <li> Carrer</li>
-                        <li> Investor Relation</li>
-                        <li>Sitemap</li>
-                        <li>Zomato For Work </li>
-                    </ul>
-                </div>
-
-
+    <footer>
+        <div class="footers">
+            <div class="footer1">
+                <h4 class="foot">Cities We Deliver To</h4>
+                <ul>
+                    <li><pre> Mumbai           Pune</li></pre>
+                    <li><pre> Delhi            Nagpur</li></pre>
+                    <li><pre> Kolkatta         Shimla</li></pre>
+                    <li><pre> Lucknow          Banglore</li></pre>
+                    <li><pre> Amravati         Akola </li></pre>
+                </ul>
             </div>
-            <p class="copyright">&copy;All Rights Reserved</p>
-        </footer>
-    
+            <div class="footer2">
+                <h4 class="foot">Zomato for foodies</h4>
+                <ul>
+                    <li> Blog</li>
+                    <li> Community</li>
+                    <li> Add Restaurant</li>
+                    <li>Mobile App</li>
+                    <li>Privacy </li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <h4 class="foot">Zomato Enterprise</h4>
+                <ul>
+                    <li> Report Fraud</li>
+                    <li> Carrer</li>
+                    <li> Investor Relation</li>
+                    <li>Sitemap</li>
+                    <li>Zomato For Work </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <p class="copyright">&copy;All Rights Reserved</p>
+    </footer>
 </body>
 </html>
